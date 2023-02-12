@@ -1,0 +1,62 @@
+
+<html>
+<h1>Hello</h1>
+<body>
+<form action="{{ url_for('home') }}" method="post">
+    <table>
+        <tr>
+            <th>
+                Username
+            </th>
+            <td>
+                <input id="username" name="user" type="text" placeholder="Enter Your Username" class="textbox"/></br></br
+            </td></tr>
+        <tr>
+            <th>
+                Email
+            </th>
+            <td>
+                <input id="email" name="email" type="email" placeholder="Enter Your Email" class="textbox"/></br></br
+            </td>
+        </tr><tr>
+            <th>
+                Role
+            </th>
+            <td>
+                <select name="role">
+                    <option name="admin">Admin</option>
+                    <option name="principal">Principal</option>
+                    <option name="hod ">Hod</option>
+                    <option name="staff">Staff</option>
+                </select>
+            </td>
+        </tr>
+          <tr>  <th>
+                Password
+            </th>
+            <td>
+                <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br
+            </td>
+        </tr>
+         <tr>  <th>
+                Confirm Password
+            </th>
+            <td>
+                <input id="con_password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br
+            </td>
+        </tr>
+        <tr>  <td>
+                <input type="submit" class="btn" value="Register"></br></br>
+            </td>
+            <td>
+                <input type="reset" class="btn" value="Reset"></br></br>
+            </td>
+        </tr>
+    </table>
+
+
+</form>
+
+</body>
+
+</html>
