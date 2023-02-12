@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <form action="{{ url_for('login') }}" method="post">
+        <table>
+            <tr>
+            <th>
+                Username
+            </th>
+            <td>
+                <input id="username" name="user" type="text" placeholder="Enter Your Username" class="textbox"/></br></br
+            </td></tr>
+        <tr>  <th>
+                Password
+            </th>
+            <td>
+                <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br
+            </td>
+        </tr>
+            <tr>  <td>
+                <input type="submit" class="btn" value="Register"></br></br>
+            </td>
+            <td>
+                <input type="reset" class="btn" value="Reset"></br></br>
+            </td>
+        </tr>
+            </table>
+    </form>
+</body>
+</html>
